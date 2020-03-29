@@ -9,6 +9,14 @@
         <title>Hello World</title>
     </head>
     <body>
+        <div>
+            <button type="button" onclick="console.log('hey')">Click Me!</button>
+            <button type="button" onClick="fullscreen();">Fullscreen</button>
+            <button type="button" onClick="portrait();">portrait</button>
+            <button type="button" onClick="portrait2();">portrait2</button>
+            <button type="button" onClick="landscape();">landscape</button>
+            <button type="button" onClick="landscape2();">landscape2</button>
+        </div>
         <div class="app">
             <h1>Apache Cordova</h1>
             <div id="deviceready" class="blin">
@@ -17,11 +25,11 @@
             </div>
             <div>
                 <input type="text" id="text" value="text" />
-                <button type="button" onclick="fullscreen()">Fullscreen</button>
-                <button type="button" onclick="portrait()">portrait</button>
-                <button type="button" onclick="portrait2()">portrait2</button>
-                <button type="button" onclick="landscape()">landscape</button>
-                <button type="button" onclick="landscape2()">landscape2</button>
+                <button type="button" onClick="fullscreen();">Fullscreen</button>
+                <button type="button" onClick="portrait();">portrait</button>
+                <button type="button" onClick="portrait2();">portrait2</button>
+                <button type="button" onClick="landscape();">landscape</button>
+                <button type="button" onClick="landscape2();">landscape2</button>
             </div>
         </div>
         <script type="text/javascript" src="cordova.js"></script>
