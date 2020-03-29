@@ -49,6 +49,11 @@ var app = {
         var deviceName = cordova.plugins.deviceName;
         console.log(deviceName.name)
         console.log("Requesting fullscreen");
+
+        window.addEventListener("orientationchange", function(){
+            console.log(screen.orientation.type); // e.g. portrait
+        });
+        
         //document.documentElement.requestFullscreen();
         //screen.orientation.lock("landscape-primary");
         console.log("ok");
