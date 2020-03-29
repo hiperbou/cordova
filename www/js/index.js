@@ -48,6 +48,8 @@ var app = {
         
         var deviceName = cordova.plugins.deviceName;
         console.log(deviceName.name)
+        screen.orientation.lock("landscape-primary");
+        console.log("ok");
         
         document.getElementById("text").value = deviceName.name;
     },
