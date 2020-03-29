@@ -50,6 +50,21 @@ var app = {
         console.log(deviceName.name)
         
         document.getElementById("text").value = deviceName.name;
+    },
+    portrait: function() {
+        screen.orientation.lock("portrait-primary");
+    },
+    portrait2: function() {
+        screen.orientation.lock("portrait-secondary");
+    },
+    landscape: function() {
+        screen.orientation.lock("landscape-primary");
+    },
+    landscape2: function() {
+        screen.orientation.lock("landscape-secondary");
+    },
+    fullscreen: function() {
+        document.documentElement.requestFullscreen();
     }
 };
 
