@@ -52,18 +52,23 @@ var app = {
         document.getElementById("text").value = deviceName.name;
     },
     portrait: function() {
+        console.log("portrait-primary");
         screen.orientation.lock("portrait-primary");
     },
     portrait2: function() {
+        console.log("portrait-secondary");
         screen.orientation.lock("portrait-secondary");
     },
     landscape: function() {
+        console.log("landscape-primary");
         screen.orientation.lock("landscape-primary");
     },
     landscape2: function() {
+        console.log("landscape-secondary");
         screen.orientation.lock("landscape-secondary");
     },
     fullscreen: function() {
+        console.log("requestFullscreen");
         document.documentElement.requestFullscreen();
     }
 };
